@@ -6,7 +6,7 @@ ul {
     list-style: none;
 }
 
-nav {
+\\HOVER EFFECTS\\ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,9 +77,31 @@ form {
     }
 }
 
-@media (max-width: 768px) {
-    h2 {
-        font-size: 48px;
-        color: blue;
-    }
+@media (max-width: 768px) {}
+
+h2 {
+    font-size: 48px;
+    color: blue;
+}
+
+nav a {
+    transition: color 0.5s ease;
+}
+
+nav a:hover {
+    color: pink;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 1s ease;
+}
+
+button:hover {
+    background-color: red;
+    color: black;
 }
