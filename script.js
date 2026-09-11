@@ -38,7 +38,21 @@ function mdas (num1,num2) {
    console.log (mdas(5,3)); 
 
 
+
+
+  // Query Selector
+const heading = document.querySelector("h1");
+console.log(heading);
+
 const contactHeading = document.querySelector("#contact h2");
 console.log(contactHeading);
+
 const servicesHeading = document.querySelector("#services h2");
 console.log(servicesHeading);
+
+//text Content
+heading.textContent = "My Portfolio";
+contactHeading.textContent = "lets connect";
+projectHeading.textContent = "My Projects";
+
+
