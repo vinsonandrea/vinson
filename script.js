@@ -26,18 +26,13 @@ console.log(greet(myName));
 function add (a,b) {
     return a + b;
 }
-function mdas (a,b) {
-    let sum = a + b;
-    let difference = a - b;
-    let product = a * b;
-    let quotient = a / b;
+function mdas (num1,num2) {
+    let m = num1 * num2;
+    let d = num1 / num2;
+    let a = num1 + num2;
+    let s = num1 - num2;
+    return (`values: ${num1} and ${num2},\n product: ${m}, \n quotient: ${d}, \n sum: ${a}, \n difference: ${s}`);
 
-    return {
-        sum: sum/2,
-        difference: difference/2,
-        product: product/2,
-        quotient: quotient/2
-    };
-
-} 
-console.log(mdas(5,3));
+    }
+   
+   console.log (mdas(5,3)); 
