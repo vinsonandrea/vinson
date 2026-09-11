@@ -21,3 +21,23 @@ function greet(name) {
 }
 
 console.log(greet(myName));
+
+
+function add (a,b) {
+    return a + b;
+}
+function mdas (a,b) {
+    let sum = a + b;
+    let difference = a - b;
+    let product = a * b;
+    let quotient = a / b;
+
+    return {
+        sum: sum/2,
+        difference: difference/2,
+        product: product/2,
+        quotient: quotient/2
+    };
+
+} 
+console.log(mdas(5,3));
