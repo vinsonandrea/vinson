@@ -34,7 +34,6 @@ function mdas (num1,num2) {
     return (`values: ${num1} and ${num2},\n product: ${m}, \n quotient: ${d}, \n sum: ${a}, \n difference: ${s}`);
 
     }
-   
    console.log (mdas(5,3)); 
 
 
@@ -47,12 +46,22 @@ console.log(heading);
 const contactHeading = document.querySelector("#contact h2");
 console.log(contactHeading);
 
+const projectsHeading = document.querySelector("#projects h2");
+console.log(projectsHeading);
 const servicesHeading = document.querySelector("#services h2");
 console.log(servicesHeading);
 
 //text Content
 heading.textContent = "My Portfolio";
 contactHeading.textContent = "lets connect";
-projectHeading.textContent = "My Projects";
+projectsHeading.textContent = "My Projects";
+servicesHeading.textContent = "My Services";
+
+//.style
+heading.style.color = "purple";
+heading.style.backgroundColor = "yellow";
+contactHeading.style.color = "purple";
+projectsHeading.style.color = "purple";
+servicesHeading.style.color = "purple";
 
 
