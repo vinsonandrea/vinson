@@ -31,12 +31,19 @@ body {
         margin: 50px;
     }
 
+
     main section {
         flex: 1;
         min-width: 280px;
         border: 2px solid black;
         padding: 20px
     }
+
+    #projects {
+        background-color: orange;
+
+
+ }
 
     form {
         display: flex;
