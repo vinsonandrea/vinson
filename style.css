@@ -31,15 +31,26 @@ body {
         margin: 50px;
     }
 
+
     main section {
         flex: 1;
         min-width: 280px;
         border: 2px solid black;
         padding: 20px
     }
+<<<<<<< HEAD
     #projects {
         background-color: aqua;
     }
+=======
+
+    #projects {
+        background-color: orange;
+
+
+ }
+
+>>>>>>> hot-theme
     form {
         display: flex;
         flex-direction: column;
