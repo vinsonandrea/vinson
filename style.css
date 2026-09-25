@@ -38,9 +38,16 @@ body {
         border: 2px solid black;
         padding: 20px
     }
-    #projects {
-        background-color: aqua;
-    }    form {
+    section[id="projects"]{
+    background-color: orange;
+    }
+
+    #contact {
+    background-color: green;
+    }   
+
+
+   form {
         display: flex;
         flex-direction: column;
         gap: 20px;
