@@ -5,60 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <h1>Andrea Ammell G. Vinson</h1>
-    <button id="switch">Switch</button>
-    
+<body class="text-center">
+    <h1 class="text-3xl font-bold"> Andrea Ammell G. Vinson</h1>
+    <button id="switch" class="bg-black text-white px-3 py-3 rounded-[15px] transition-colors duration-500
+         hover:bg-red-500">
+        Switch
+    </button>
+
     <header>
-        <nav>
-            <span>@dreavinson</span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+        <h1 class="text-3xl text-red-500 font-bold underline">
+            Hello world!
+        </h1>
+        <nav class="flex justify-between items-center mx-[50px] max-[600px]:flex-col">
+            <span class="text-green-500 text-[50px]">
+                @dreavinson
+            </span>
+            <ul class="flex gap-5 list-none max-[600px]:flex-col">
+                <li><a href="#projects" class="hover:text-red-500">Projects</a></li>
+                <li><a href="#services" class="hover:text-red-300">Services</a></li>
+                <li><a href="#contact" class="hover:text-red-200">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="projects">
-            <h2 class="projects">My Projects</h2>
-            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
+    <main class="flex flex-wrap gap-[30px] p-[50px] m-[50px] max-[600px]:p-[15px]
+     max-[600px]:m-[10px]">
+        <!-- Projects -->
+        <section id="projects" class="flex-1 min-w-[280px] border-2 border-black p-5 
+        bg-pink-400 max-[600px]:min-w-0">
+            <h2 class="max-[768px]:text-[48px] max-[768px]:text-blue-500">
+                My Projects
+            </h2>
+            <p>
+                Personal portfolio, payroll system, company website,startup website, and compliance monitoring system.
             </p>
         </section>
-
-        <section id="services">
-            <h2 class="services">My Services</h2>
-            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
-                Analyst</p>
+        <!-- Services -->
+        <section id="services" class="flex-1 min-w-[280px] border-2 border-black p-5
+         bg-gray-500 max-[600px]:min-w-0">
+            <h2 class="max-[768px]:text-[48px] max-[768px]:text-blue-500">
+                My Services
+            </h2>
+            <p>
+                Website Creation, System Creation, AI Automation,Database Management, Project Management, Systems
+                Analyst
+            </p>
         </section>
-
-        <section id="contact">
-            <h2 class="contact">Let's build together!</h2>
-            <form action="#">
-                <!-- Name -->
+        <!-- Contact -->
+        <section id="contact" class="flex-1 min-w-[280px] border-2 border-black p-5 
+        bg-violet-500 max-[600px]:min-w-0">
+            <h2 class="max-[768px]:text-[48px] max-[768px]:text-blue-500">
+                Let's build together!
+            </h2>
+            <form action="#" class="flex flex-col gap-5">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <!-- Email -->
+                <input id="name" name="name" type="text" required class="border border-gray-400 p-2">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-
-                <!-- Message -->
+                <input id="email" name="email" type="email" required class="border border-gray-400 p-2">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
-
-                <!-- Submit -->
-                <button type="submit">Send Message</button>
+                <textarea id="message" name="message" rows="5" required class="border border-gray-400 p-2">
+                </textarea>
+                <button type="submit" class="bg-black text-white p-3 rounded-[15px] hover:bg-red-500">
+                    Send Message
+                </button>
             </form>
         </section>
     </main>
-
     <script src="script.js"></script>
-    
 </body>
 
 </html>
