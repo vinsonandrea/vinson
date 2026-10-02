@@ -1,8 +1,6 @@
 console.log("Hello, World!");
 
 
-
-
 const myName = "Andrea Ammell vinson";
 let age = 20;
 const number = "638271709";
